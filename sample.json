@@ -1,25 +1,12 @@
 {
-  "title": "Minimal smoke test",
-  "family": "sample",
-  "stage": "minimal",
   "projectId": "smoke-test",
-  "goal": "Validate that bobinabox can accept a request, queue it, run Bob, and write a report.",
-  "instructionsFile": "instructions.md",
-  "source": {
-    "repoUrl": "",
-    "branch": "",
-    "commit": ""
-  },
-  "inputs": [
-    {
-      "name": "instructions.md",
-      "contentType": "text/markdown",
-      "purpose": "instructions"
-    }
-  ],
-  "expectedOutputs": [
-    "modernization-report.md",
-    "bob.stdout.log",
-    "bob.stderr.log"
+  "title": "Smoke Test",
+  "description": "Minimal example to verify the BINB Studio platform works end-to-end.",
+  "inputs": ["instructions.md"],
+  "expectedOutputs": ["modernization-report.md"],
+  "suggestedPrompts": [
+    "What does this project want you to do?",
+    "List all the files you can see in this repo.",
+    "Go ahead and produce the report."
   ]
 }

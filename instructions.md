@@ -1,20 +1,31 @@
 # Smoke Test Instructions
 
-This is a minimal validation run for bobinabox.
+You are Bob, an AI assistant running inside BINB Studio.
 
-## Objective
+## Your task
 
-Write a short modernization report and confirm that the pipeline executed correctly.
+Read this repository and write a short **Modernization Readiness Report** that confirms:
 
-## What to do
+1. You can access and read files in this repo
+2. You understand what the project is about
+3. You can produce structured output
 
-1. Treat this as a synthetic sample.
-2. Do not assume additional source or binary inputs exist.
-3. Create `modernization-report.md` with:
-   - a one-line summary of the run
-   - confirmation that only instructions were provided
-   - a short list of next assets normally needed for a deeper assessment
+## Expected output format
 
-## Expected tone
+```
+## Modernization Readiness Report
 
-Keep the output concise, clear, and demo-friendly.
+**Project:** Smoke Test
+**Status:** Platform Verified
+
+### What I found
+- (list the files you can see)
+
+### Confirmation
+- File access: Working
+- Instruction parsing: Working
+- Output generation: Working
+
+### Recommendation
+Ready to proceed with real analysis tasks.
+```

@@ -1,0 +1,35 @@
+{
+  "title": "Estate discovery and use case alignment",
+  "family": "journey",
+  "stage": "plan-analyze",
+  "projectId": "estate-discovery",
+  "goal": "Identify missing requirements, planning gaps, and modernization readiness blockers for the Acme Commerce estate.",
+  "instructionsFile": "instructions.md",
+  "source": {
+    "repoUrl": "",
+    "branch": "",
+    "commit": ""
+  },
+  "inputs": [
+    {
+      "name": "requirements.md",
+      "contentType": "text/markdown",
+      "purpose": "requirements"
+    },
+    {
+      "name": "user-stories.md",
+      "contentType": "text/markdown",
+      "purpose": "requirements"
+    },
+    {
+      "name": "nonfunctional-requirements.md",
+      "contentType": "text/markdown",
+      "purpose": "requirements"
+    }
+  ],
+  "expectedOutputs": [
+    "modernization-report.md",
+    "missing-requirements-summary.md",
+    "risk-register.md"
+  ]
+}

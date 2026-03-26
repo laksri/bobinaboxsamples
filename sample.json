@@ -1,35 +1,21 @@
 {
-  "title": "Architecture blueprint and target stack selection",
-  "family": "journey",
-  "stage": "design",
-  "projectId": "architecture-blueprint",
-  "goal": "Generate a target architecture blueprint and design decision summary for the Acme Commerce modernization effort.",
-  "instructionsFile": "instructions.md",
-  "source": {
-    "repoUrl": "",
-    "branch": "",
-    "commit": ""
-  },
+  "projectId": "design-blueprint",
+  "title": "Design Blueprint",
+  "description": "Bob translates requirements and design principles into a target architecture blueprint for OpenShift.",
   "inputs": [
-    {
-      "name": "requirements.md",
-      "contentType": "text/markdown",
-      "purpose": "requirements"
-    },
-    {
-      "name": "target-principles.md",
-      "contentType": "text/markdown",
-      "purpose": "design-input"
-    },
-    {
-      "name": "integration-map.md",
-      "contentType": "text/markdown",
-      "purpose": "design-input"
-    }
+    "inputs/requirements.md",
+    "inputs/target-principles.md",
+    "inputs/integration-map.md"
   ],
   "expectedOutputs": [
-    "modernization-report.md",
     "architecture-blueprint.md",
-    "adr-summary.md"
+    "adr-summary.md",
+    "component-diagram-notes.md"
+  ],
+  "suggestedPrompts": [
+    "Review the inputs and summarize the key design constraints.",
+    "Propose a target component architecture for Acme Commerce on OpenShift.",
+    "Write ADRs for the key architecture decisions.",
+    "Generate the full architecture blueprint document."
   ]
 }

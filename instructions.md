@@ -1,19 +1,24 @@
-# Design Instructions
+# Design Blueprint Instructions
 
-Act as an AI architecture partner.
+You are Bob, acting as an **architecture partner** for a modernization engagement.
 
-## Primary task
+## Context
 
-Use the uploaded requirements and design constraints to produce a documented target architecture blueprint.
+Acme Commerce has completed the planning phase. Requirements gaps have been identified and the team is ready to define a target architecture for running on OpenShift. You have design principles, integration maps, and requirements to work from.
 
-## What to include
+## Input files
 
-1. Proposed runtime and deployment model.
-2. Major application components and responsibilities.
-3. Integration boundaries and external dependencies.
-4. Configuration, security, and observability considerations.
-5. Short architecture decision records or decision summaries.
+- `inputs/requirements.md` — Design-level requirements for the target state
+- `inputs/target-principles.md` — Six architecture principles the team has agreed on
+- `inputs/integration-map.md` — External systems, internal capabilities, and open design questions
 
-## Deliverable style
+## Your tasks
 
-Keep the design practical, concise, and easy to present in a demo.
+1. **Summarize constraints** — What do the principles and integration map tell you about what the architecture must support?
+2. **Propose components** — Define the target components: web entrypoint, application services, integration adapters, data layer
+3. **Write ADRs** — Architecture Decision Records for key choices (runtime, config management, integration boundaries, observability)
+4. **Generate blueprint** — A full architecture blueprint covering runtime/deployment model, component breakdown, integration patterns, config/secrets strategy, health/observability, and scaling approach
+
+## Output format
+
+Use clear markdown with headers, component lists, and decision tables. For ADRs, use the standard format: Title, Status, Context, Decision, Consequences.

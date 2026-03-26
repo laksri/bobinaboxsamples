@@ -1,0 +1,35 @@
+{
+  "title": "Architecture blueprint and target stack selection",
+  "family": "journey",
+  "stage": "design",
+  "projectId": "architecture-blueprint",
+  "goal": "Generate a target architecture blueprint and design decision summary for the Acme Commerce modernization effort.",
+  "instructionsFile": "instructions.md",
+  "source": {
+    "repoUrl": "",
+    "branch": "",
+    "commit": ""
+  },
+  "inputs": [
+    {
+      "name": "requirements.md",
+      "contentType": "text/markdown",
+      "purpose": "requirements"
+    },
+    {
+      "name": "target-principles.md",
+      "contentType": "text/markdown",
+      "purpose": "design-input"
+    },
+    {
+      "name": "integration-map.md",
+      "contentType": "text/markdown",
+      "purpose": "design-input"
+    }
+  ],
+  "expectedOutputs": [
+    "modernization-report.md",
+    "architecture-blueprint.md",
+    "adr-summary.md"
+  ]
+}

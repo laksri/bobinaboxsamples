@@ -1,0 +1,162 @@
+{
+  "repo": "bobinaboxsamples",
+  "catalog_version": 1,
+  "families": [
+    {
+      "name": "journey",
+      "description": "Narrative branches aligned to the Bob SDLC flow."
+    },
+    {
+      "name": "sample",
+      "description": "Runnable bobinabox sample packs and input sets."
+    }
+  ],
+  "scenarios": [
+    {
+      "branch": "journey/10-plan-analyze-estate-discovery",
+      "family": "journey",
+      "stage": "plan-analyze",
+      "title": "Estate discovery and use case alignment",
+      "description": "Discovery-first scenario focused on KPI definition, scope, constraints, and asset readiness.",
+      "suggested_inputs": [
+        "instructions.md",
+        "architecture-overview.pdf",
+        "support-matrix.pdf"
+      ]
+    },
+    {
+      "branch": "journey/20-design-architecture-blueprint",
+      "family": "journey",
+      "stage": "design",
+      "title": "Architecture blueprint and target stack selection",
+      "description": "Design-phase scenario focused on runtime target, topology, and modernization blueprint.",
+      "suggested_inputs": [
+        "instructions.md",
+        "design-principles.md",
+        "topology.pdf"
+      ]
+    },
+    {
+      "branch": "journey/30-develop-java-modernization",
+      "family": "journey",
+      "stage": "develop",
+      "title": "Core Java modernization and implementation",
+      "description": "Development-phase scenario focused on editable source and transformation outputs.",
+      "suggested_inputs": [
+        "instructions.md",
+        "application.ear",
+        "source-bundle.zip"
+      ]
+    },
+    {
+      "branch": "journey/40-test-hardening",
+      "family": "journey",
+      "stage": "test",
+      "title": "Security, load, and usability hardening",
+      "description": "Testing-focused scenario for identifying gaps and generating a hardening plan.",
+      "suggested_inputs": [
+        "instructions.md",
+        "test-results.zip",
+        "security-findings.pdf"
+      ]
+    },
+    {
+      "branch": "journey/50-deploy-rollout",
+      "family": "journey",
+      "stage": "deploy",
+      "title": "Deployment and rollout planning",
+      "description": "Deployment-focused scenario covering initial rollout, scaling, and operational checks.",
+      "suggested_inputs": [
+        "instructions.md",
+        "deployment-runbook.pdf",
+        "values.yaml"
+      ]
+    },
+    {
+      "branch": "journey/60-maintain-observability",
+      "family": "journey",
+      "stage": "maintain",
+      "title": "Continuous improvement and observability",
+      "description": "Maintenance-focused scenario for runtime tuning, monitoring, and security optimization.",
+      "suggested_inputs": [
+        "instructions.md",
+        "observability-report.pdf",
+        "incident-summary.md"
+      ]
+    },
+    {
+      "branch": "sample/00-smoke-test",
+      "family": "sample",
+      "stage": "minimal",
+      "title": "Minimal smoke test",
+      "description": "Instructions-only scenario to validate the bobinabox pipeline.",
+      "suggested_inputs": [
+        "instructions.md"
+      ]
+    },
+    {
+      "branch": "sample/10-docs-first-estate-review",
+      "family": "sample",
+      "stage": "discovery",
+      "title": "Docs-first estate review",
+      "description": "Use documentation before source or binaries are available.",
+      "suggested_inputs": [
+        "instructions.md",
+        "architecture-overview.pdf",
+        "support-matrix.pdf"
+      ]
+    },
+    {
+      "branch": "sample/20-repo-only-assessment",
+      "family": "sample",
+      "stage": "assessment",
+      "title": "Repo-only assessment",
+      "description": "Repository-driven analysis with no uploaded binaries.",
+      "suggested_inputs": [
+        "instructions.md"
+      ],
+      "source": {
+        "repo_url": "https://github.com/example/platform-monolith",
+        "branch": "main"
+      }
+    },
+    {
+      "branch": "sample/30-war-replatform",
+      "family": "sample",
+      "stage": "modernization",
+      "title": "WAR replatform",
+      "description": "Containerization and runtime upgrade plan for a web archive.",
+      "suggested_inputs": [
+        "instructions.md",
+        "billing-ui.war",
+        "deployment-notes.pdf"
+      ]
+    },
+    {
+      "branch": "sample/40-jar-service-refresh",
+      "family": "sample",
+      "stage": "modernization",
+      "title": "JAR service refresh",
+      "description": "Spring Boot or runnable JAR modernization with source zip support.",
+      "suggested_inputs": [
+        "instructions.md",
+        "order-service.jar",
+        "order-service-src.zip",
+        "service-checklist.pdf"
+      ]
+    },
+    {
+      "branch": "sample/50-ear-full-modernization",
+      "family": "sample",
+      "stage": "modernization",
+      "title": "EAR full modernization",
+      "description": "Full enterprise application example with binary, source, repo reference, and supporting docs.",
+      "suggested_inputs": [
+        "instructions.md",
+        "payments.ear",
+        "source-bundle.zip",
+        "runbook.pdf"
+      ]
+    }
+  ]
+}

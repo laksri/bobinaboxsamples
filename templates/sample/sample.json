@@ -1,0 +1,25 @@
+{
+  "title": "Sample Title",
+  "family": "sample",
+  "stage": "modernization",
+  "projectId": "replace-me",
+  "goal": "Replace with the sample goal.",
+  "instructionsFile": "instructions.md",
+  "source": {
+    "repoUrl": "",
+    "branch": "",
+    "commit": ""
+  },
+  "inputs": [
+    {
+      "name": "instructions.md",
+      "contentType": "text/markdown",
+      "purpose": "instructions"
+    }
+  ],
+  "expectedOutputs": [
+    "modernization-report.md",
+    "bob.stdout.log",
+    "bob.stderr.log"
+  ]
+}

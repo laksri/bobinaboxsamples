@@ -1,0 +1,25 @@
+{
+  "title": "Minimal smoke test",
+  "family": "sample",
+  "stage": "minimal",
+  "projectId": "smoke-test",
+  "goal": "Validate that bobinabox can accept a request, queue it, run Bob, and write a report.",
+  "instructionsFile": "instructions.md",
+  "source": {
+    "repoUrl": "",
+    "branch": "",
+    "commit": ""
+  },
+  "inputs": [
+    {
+      "name": "instructions.md",
+      "contentType": "text/markdown",
+      "purpose": "instructions"
+    }
+  ],
+  "expectedOutputs": [
+    "modernization-report.md",
+    "bob.stdout.log",
+    "bob.stderr.log"
+  ]
+}

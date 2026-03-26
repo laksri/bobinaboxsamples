@@ -1,48 +1,22 @@
-# Plan & Analyze Journey Sample
+# Plan & Analyze: Estate Discovery
 
-This branch demonstrates the first Bob SDLC story:
+Bob acts as a planning partner to review requirements for a legacy modernization project (fictional "Acme Commerce" app) and identify what's missing before design begins.
 
-- AI identifies unimplemented requirements, readiness gaps, and planning risks.
+## What this demonstrates
 
-## Purpose
+- Bob reads requirements, user stories, and NFRs
+- Bob identifies gaps in requirements coverage
+- Bob flags risks and unclear ownership
+- Bob recommends next steps
 
-Use this branch to demo discovery and planning before architecture or coding work begins.
+## The scenario
 
-The inputs are intentionally synthetic but realistic enough to let Bob:
+Acme Commerce is a Java 8 monolith running on a traditional app server. The team wants to modernize onto OpenShift. They've written initial requirements, user stories, and NFRs — but they've left some things out on purpose.
 
-- compare stated requirements to current-state reality
-- identify missing non-functional requirements
-- flag unclear ownership, dependencies, and rollout assumptions
-- produce a prioritized next-step list
+## Try it
 
-## Assets in this branch
-
-- [`instructions.md`](/Users/laksri/Downloads/bobinaboxsamples/instructions.md)
-- [`sample.json`](/Users/laksri/Downloads/bobinaboxsamples/sample.json)
-- [`inputs/requirements.md`](/Users/laksri/Downloads/bobinaboxsamples/inputs/requirements.md)
-- [`inputs/user-stories.md`](/Users/laksri/Downloads/bobinaboxsamples/inputs/user-stories.md)
-- [`inputs/nonfunctional-requirements.md`](/Users/laksri/Downloads/bobinaboxsamples/inputs/nonfunctional-requirements.md)
-- [`docs/current-state-summary.md`](/Users/laksri/Downloads/bobinaboxsamples/docs/current-state-summary.md)
-- [`expected/modernization-report-outline.md`](/Users/laksri/Downloads/bobinaboxsamples/expected/modernization-report-outline.md)
-- [`expected/missing-requirements-example.md`](/Users/laksri/Downloads/bobinaboxsamples/expected/missing-requirements-example.md)
-- [`expected/risk-register-example.md`](/Users/laksri/Downloads/bobinaboxsamples/expected/risk-register-example.md)
-
-## Suggested bobinabox submission
-
-- `projectId`: `estate-discovery`
-- `goal`: `Identify missing requirements, planning gaps, and modernization readiness blockers for the Acme Commerce estate.`
-- upload:
-  - `instructions.md`
-  - `requirements.md`
-  - `user-stories.md`
-  - `nonfunctional-requirements.md`
-
-## Expected outputs
-
-- discovery-oriented modernization report
-- missing requirements summary
-- risk register or issue list
-
-## Public-safe note
-
-All business names, requirements, and constraints in this branch are synthetic.
+1. Browse the `inputs/` folder to see what the team has written
+2. Ask Bob: **"Summarize what Acme Commerce needs based on these requirements."**
+3. Ask Bob: **"What requirements are missing? What hasn't been defined yet?"**
+4. Ask Bob: **"Create a risk register for this modernization."**
+5. Ask Bob: **"What should the team do next to close these gaps?"**

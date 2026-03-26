@@ -1,35 +1,23 @@
 {
-  "title": "Estate discovery and use case alignment",
-  "family": "journey",
-  "stage": "plan-analyze",
-  "projectId": "estate-discovery",
-  "goal": "Identify missing requirements, planning gaps, and modernization readiness blockers for the Acme Commerce estate.",
-  "instructionsFile": "instructions.md",
-  "source": {
-    "repoUrl": "",
-    "branch": "",
-    "commit": ""
-  },
+  "projectId": "plan-analyze",
+  "title": "Plan & Analyze",
+  "description": "Bob reviews requirements for a legacy modernization and identifies gaps, risks, and next steps.",
   "inputs": [
-    {
-      "name": "requirements.md",
-      "contentType": "text/markdown",
-      "purpose": "requirements"
-    },
-    {
-      "name": "user-stories.md",
-      "contentType": "text/markdown",
-      "purpose": "requirements"
-    },
-    {
-      "name": "nonfunctional-requirements.md",
-      "contentType": "text/markdown",
-      "purpose": "requirements"
-    }
+    "inputs/requirements.md",
+    "inputs/user-stories.md",
+    "inputs/nonfunctional-requirements.md",
+    "inputs/current-state.md"
   ],
   "expectedOutputs": [
-    "modernization-report.md",
-    "missing-requirements-summary.md",
-    "risk-register.md"
+    "requirements-summary.md",
+    "missing-requirements.md",
+    "risk-register.md",
+    "recommended-actions.md"
+  ],
+  "suggestedPrompts": [
+    "Summarize what Acme Commerce needs based on these requirements.",
+    "What requirements are missing? What hasn't been defined yet?",
+    "Create a risk register for this modernization.",
+    "What should the team do next to close these gaps?"
   ]
 }
